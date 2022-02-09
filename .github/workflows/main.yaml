@@ -14,11 +14,14 @@ jobs:
         id: meta
         uses: docker/metadata-action@v3
         with:
+          flavor: |
+            latest=true
           images: |
             ghcr.io/timbodv/tools_shell
           tags: |
             type=ref,event=tag
             type=sha
+        # https://github.com/docker/build-push-action/blob/master/docs/advanced/tags-labels.md
       #-
         #name: Set up QEMU
         #uses: docker/setup-qemu-action@v1
