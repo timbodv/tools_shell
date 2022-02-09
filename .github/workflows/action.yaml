@@ -1,0 +1,5 @@
+name: 'First docker action'
+description: 'First docker action'
+runs:
+  using: 'docker'
+  image: 'Dockerfile'
