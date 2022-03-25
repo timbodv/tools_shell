@@ -74,7 +74,8 @@ RUN sudo dnf install -y pandoc \
                         jq \
                         git \
                         gnutls-utils \
-                        mtr
+                        mtr \
+                        sshpass
 
 # Terraform, Vault, and Packer
 RUN sudo dnf install -y dnf-plugins-core \
