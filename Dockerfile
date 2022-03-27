@@ -81,6 +81,7 @@ RUN sudo dnf install -y pandoc \
 RUN sudo dnf install -y dnf-plugins-core \
     && sudo dnf config-manager --add-repo https://rpm.releases.hashicorp.com/fedora/hashicorp.repo \
     && sudo dnf -y install terraform packer vault
+    && setcap -r /usr/bin/vault
 
 # Ansible with the Azure addins
 RUN sudo dnf install -y pip
