@@ -4,6 +4,7 @@ Set-PSRepository -Name PSGallery -InstallationPolicy Trusted
 
 "Az",
 "AWSPowerShell.NetCore",
+"Az.ConnectedMachine",
 "ImportExcel",
 "Join-Object",
 "Microsoft.PowerShell.Crescendo",
