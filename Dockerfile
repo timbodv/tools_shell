@@ -64,7 +64,7 @@ RUN /usr/bin/pwsh -File ./installPowerShellModules.ps1
 ##############################################
 
 # fx https://github.com/antonmedv/fx/releases
-RUN curl -L "https://github.com/antonmedv/fx/releases/download/20.0.2/fx-linux.zip" -o "fx-linux.zip" \
+RUN curl -L "https://github.com/antonmedv/fx/releases/download/latest/fx-linux.zip" -o "fx-linux.zip" \
     && unzip ./fx-linux.zip \
     && chmod +x ./fx-linux \
     && sudo cp ./fx-linux /usr/local/bin/fx
